@@ -1,60 +1,50 @@
 body {
-    font-family: Arial, FreeSans, sans-serif;
-  }
+  font-family: italic normal normal 14px/1.4em georgia,palatino,'book antiqua','palatino linotype',serif;
+}
   
-  .cssForm {
-    background-color: transparent;
+.cssForm::before {
+  content: "";
+  background: url('https://static.wixstatic.com/media/9d1679_8b00cb2857404aea83b4be68290820de~mv2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.cssForm table {
+  width: 90%;
+  margin: auto;
+}
+
+tr {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 20px;
 }
 
 .cssLabelsColumn {
-	width: 150px;
-	vertical-align: top;
-	font-weight: bold;
-	font-size: .8em;
-	text-align: right;	
-	vertical-align: center;
-	
+  font-weight: bold;
+  vertical-align: center;
+  display: inline-block;
+  width: 50%;
+  margin: auto;
 }
 
 .cssInputFieldsColumn {
-	vertical-align: top;
+  display: inline-block;
+  width: 50%;
+  margin: auto;
+  vertical-align: top;
 }
 
-.cssInputFields {
-}
-
-.cssTextArea { 
-	width:300px; 
-}
-
-
-/*=======================================================================
-    SAMPLE UGLY CSS for the Volunteers Signup page that while ugly,
-	makes it clear what you can visually control.
-	Comment out the CSS above, and remove the trailing comment
-	on this CSS to see some ugly stuff!
-
-.cssForm {
-	background-color: Gainsboro;
-}
-
-.cssLabelsColumn {
-	color: DarkBlue;
-	width: 150px;
-	vertical-align: top;
-	font-family: Century Gothic, sans-serif;
-	font-weight: bold;	
-}
-
-.cssInputFieldsColumn {
-	background-color: LightBlue;
-}
-
-.cssInputFields {
-	color: red;
-	background-color: LightYellow;
-	font-family: Georgia, Serif;
-	border-style: groove;
-	border-color: DodgerBlue;
-
+.cssInputFields[type=text] {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 80%;
+  background: transparent;
 }
