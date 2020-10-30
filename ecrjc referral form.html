@@ -1,0 +1,340 @@
+<html>
+<body style="background-color: lightblue;">
+
+<!-- Â ---------------------------------------------------------------------- Â -->
+<!-- Â NOTE: Please add the following <META> element to your page <HEAD>. Â  Â  Â -->
+<!-- Â If necessary, please modify the charset parameter to specify the Â  Â  Â  Â -->
+<!-- Â character set of your HTML page. Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â -->
+<!-- Â ---------------------------------------------------------------------- Â -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!-- Â ---------------------------------------------------------------------- Â -->
+<!-- Â NOTE: Please add the following <FORM> element to your page. Â  Â  Â  Â  Â  Â  -->
+<!-- Â ---------------------------------------------------------------------- Â -->
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+<input type=hidden name="orgid" value="00D460000001X40">
+<input type=hidden name="retURL" value="http://https://www.ecrjc.org/">
+
+<!-- Â ---------------------------------------------------------------------- Â -->
+<!-- Â NOTE: These fields are optional debugging elements. Please uncomment Â  Â -->
+<!-- Â these lines if you wish to test in debug mode. Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â -->
+<!-- Â <input type="hidden" name="debug" value=1> Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â -->
+<!-- Â <input type="hidden" name="debugEmail" Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â -->
+<!-- Â value="gabriel@edgeanalytix.net"> Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  Â  -->
+<!-- Â ---------------------------------------------------------------------- Â -->
+
+<div class="row">
+  <div class="cell"><label>Referral Date</label></div>
+  <div class="cell"><label>Referring Agency</label></div>
+</div>
+
+<div class="row">
+  <input Â id="00N4p00000GM9Va" name="00N4p00000GM9Va" size="12" type="text" />
+  <input Â id="00N4p00000GM9Vf" maxlength="100" name="00N4p00000GM9Vf" size="20" type="text" />
+</div>
+<br>
+<br>
+
+<h3>Referrer</h3>
+
+<div class="row">
+  <div class="cell"><label>Name</label></div>
+  <div class="cell"><label>Contact Number</label></div>
+  <div class="cell"><label>Email</label></div>
+</div>
+
+<div class="row">
+  <input Â id="00N4p00000GM9Vk" maxlength="80" name="00N4p00000GM9Vk" size="20" type="text" />
+  <input Â id="00N4p00000GM9Vp" maxlength="40" name="00N4p00000GM9Vp" onkeydown="formatPhoneOnEnter(this, event);" size="20" type="text" />
+  <input Â id="00N4p00000GM9Vu" maxlength="80" name="00N4p00000GM9Vu" size="20" type="text" />
+</div>
+
+<div class="row">
+  <div class="cell"><label>Address</label></div>
+  <div class="cell"><label>City</label></div>
+  <div class="cell"><label>State/Province</label></div>
+</div>
+
+<div class="row">
+  <input Â id="00N4p00000GM9Vz" maxlength="100" name="00N4p00000GM9Vz" size="20" type="text" />
+  <input Â id="00N4p00000GM9W4" maxlength="50" name="00N4p00000GM9W4" size="20" type="text" />
+  <input Â id="00N4p00000GM9W9" maxlength="30" name="00N4p00000GM9W9" size="20" type="text" />
+</div>
+
+<div class="row">
+  <div class="cell"><label>Zip/Postal Code</label></div>
+  <div class="cell"><label>Country</label></div>
+</div>
+
+<div class="row">
+  <input Â id="00N4p00000GM9WE" maxlength="20" name="00N4p00000GM9WE" size="20" type="text" />
+  <input Â id="00N4p00000GM9WJ" maxlength="50" name="00N4p00000GM9WJ" size="20" type="text" />
+</div>
+<br>
+<br>
+
+<h3 class="participantTitle">Participant 1</h3>
+
+<div class="row">
+  <div class="cell"><label>First Name</label></div>
+  <div class="cell"><label>Last Name</label></div>
+</div>
+
+<div class="row">
+  <input Â id="00N4p00000GM9WO" maxlength="20" name="00N4p00000GM9WO" size="20" type="text" />
+  <input Â id="00N4p00000GM9WT" maxlength="20" name="00N4p00000GM9WT" size="20" type="text" />
+</div>
+
+<div class="row">
+  <div class="cell"><label>Contact Number</label></div>
+  <div class="cell"><label>Age</label></div>
+  <div class="cell"><label>Victim/Offender</label><br></div>
+</div>
+
+<div class="row">
+  <input Â id="00N4p00000GM9Wd" maxlength="40" name="00N4p00000GM9Wd" onkeydown="formatPhoneOnEnter(this, event);" size="20" type="text" />
+  <input Â id="00N4p00000GM9WY" name="00N4p00000GM9WY" size="20" type="text" />
+  <select Â id="00N4p00000GM9Wi" name="00N4p00000GM9Wi" title="Participant 1 Victim/Offender">
+    <option selected="" value="" default="" style="display:none" disabled=""></option>
+    <option value="Victim (Person Harmed)">Victim (Person Harmed)</option>
+    <option value="Offender (Person Who Harmed)">Offender (Person Who Harmed)</option>
+  </select>
+</div>
+
+<div id="nextParticipants"></div>
+
+<div id="addParticipantWrapper">
+  <button onclick="addParticipant(event)" class="addParticipant">Add participant</button>
+</div>
+
+<div class="row"><label>Incident Description</label></div>
+<div class="row"><textarea Â id="00N4p00000GM9Yo" name="00N4p00000GM9Yo" rows="5" type="text" wrap="soft"></textarea></div>
+
+<input type="submit" name="submit">
+</form>
+
+<script>
+  const participants = [
+    `
+      <br>
+      <div class="participant">
+        <h3 class="participantTitle">
+          Participant 2
+          <button class="removeParticipant" onclick="removeParticipant(event)">remove participant</button>
+        </h3>
+        <div class="row">
+          <div class="cell"><label>First Name</label></div>
+          <div class="cell"><label>Last Name</label></div>
+        </div>
+        <div class="row">
+          <input Â id="00N4p00000GM9XH" maxlength="20" name="00N4p00000GM9XH" size="20" type="text" /><br>
+          <input Â id="00N4p00000GM9XM" maxlength="20" name="00N4p00000GM9XM" size="20" type="text" /><br>
+        </div>
+        <div class="row">
+          <div class="cell"><label>Contact Number</label></div>
+          <div class="cell"><label>Age</label></div>
+          <div class="cell"><label>Victim/Offender</label></div>
+        </div>
+        <div class="row">
+          <input Â id="00N4p00000GM9XW" maxlength="40" name="00N4p00000GM9XW" onkeydown="formatPhoneOnEnter(this, event);" size="20" type="text" /><br>
+          <input Â id="00N4p00000GM9XT" name="00N4p00000GM9XT" size="20" type="text" /><br>
+          <select Â id="00N4p00000GM9Xb" name="00N4p00000GM9Xb" title="Participant 2 Victim/Offender">
+            <option selected="" value="" default="" style="display:none" disabled=""></option>
+            <option value="Victim (Person Harmed)">Victim (Person Harmed)</option>
+            <option value="Offender (Person Who Harmed)">Offender (Person Who Harmed)</option>
+          </select><br>
+        </div>
+      </div>
+    `,
+    `
+      <br>
+      <div class="participant">
+        <h3 class="participantTitle">
+          Participant 3
+          <button class="removeParticipant" onclick="removeParticipant(event)">remove participant</button>
+        </h3>
+        <div class="row">
+          <div class="cell"><label>First Name</label></div>
+          <div class="cell"><label>Last Name</label></div>
+        </div>
+        <div class="row">
+          <input Â id="00N4p00000GM9Xg" maxlength="20" name="00N4p00000GM9Xg" size="20" type="text" /><br>
+          <input Â id="00N4p00000GM9Xl" maxlength="20" name="00N4p00000GM9Xl" size="20" type="text" /><br>
+        </div>
+        <div class="row">
+          <div class="cell"><label>Contact Number</label></div>
+          <div class="cell"><label>Age</label></div>
+          <div class="cell"><label>Victim/Offender</label></div>
+        </div>
+        <div class="row">
+          <input Â id="00N4p00000GM9Xv" maxlength="40" name="00N4p00000GM9Xv" onkeydown="formatPhoneOnEnter(this, event);" size="20" type="text" /><br>
+          <input Â id="00N4p00000GM9Xq" name="00N4p00000GM9Xq" size="20" type="text" /><br>
+          <select Â id="00N4p00000GM9Y0" name="00N4p00000GM9Y0" title="Participant 3 Victim/Offender">
+            <option selected="" value="" default="" style="display:none" disabled=""></option>
+            <option value="Victim (Person Harmed)">Victim (Person Harmed)</option>
+            <option value="Offender (Person Who Harmed)">Offender (Person Who Harmed)</option>
+          </select><br>
+        </div>
+      </div>
+    `,
+    `
+      <br>
+      <div class="participant">
+        <h3 class="participantTitle">
+          Participant 4
+          <button class="removeParticipant" onclick="removeParticipant(event)">remove participant</button>
+        </h3>
+        <div class="row">
+          <div class="cell"><label>First Name</label></div>
+          <div class="cell"><label>Last Name</label></div>
+        </div>
+        <div class="row">
+          <input Â id="00N4p00000GM9Y5" maxlength="20" name="00N4p00000GM9Y5" size="20" type="text" /><br>
+          <input Â id="00N4p00000GM9YA" maxlength="20" name="00N4p00000GM9YA" size="20" type="text" /><br>
+        </div>
+        <div class="row">
+          <div class="cell"><label>Contact Number</label></div>
+          <div class="cell"><label>Age</label></div>
+          <div class="cell"><label>Victim/Offender</label></div>
+        </div>
+        <div class="row">
+          <input Â id="00N4p00000GM9YB" maxlength="40" name="00N4p00000GM9YB" onkeydown="formatPhoneOnEnter(this, event);" size="20" type="text" /><br>
+          <input Â id="00N4p00000GM9YF" name="00N4p00000GM9YF" size="20" type="text" /><br>
+          <select Â id="00N4p00000GM9YK" name="00N4p00000GM9YK" title="Participant 4 Victim/Offender">
+            <option selected="" value="" default="" style="display:none" disabled=""></option>
+            <option value="Victim (Person Harmed)">Victim (Person Harmed)</option>
+            <option value="Offender (Person Who Harmed)">Offender (Person Who Harmed)</option>
+          </select><br>
+        </div>
+      </div>
+    `,
+    `
+      <br>
+      <div class="participant">
+        <h3 class="participantTitle">
+          Participant 5
+          <button class="removeParticipant" onclick="removeParticipant(event)">remove participant</button>
+        </h3>
+        <div class="row">
+          <div class="cell"><label>First Name</label></div>
+          <div class="cell"><label>Last Name</label></div>
+        </div>
+        <div class="row">
+          <input Â id="00N4p00000GM9YP" maxlength="20" name="00N4p00000GM9YP" size="20" type="text" /><br>
+          <input Â id="00N4p00000GM9YU" maxlength="20" name="00N4p00000GM9YU" size="20" type="text" /><br>
+        </div>
+        <div class="row">
+          <div class="cell"><label>Contact Number</label></div>
+          <div class="cell"><label>Age</label></div>
+          <div class="cell"><label>Victim/Offender</label></div>
+        </div>
+        <div class="row">
+          <input Â id="00N4p00000GM9Ye" maxlength="40" name="00N4p00000GM9Ye" onkeydown="formatPhoneOnEnter(this, event);" size="20" type="text" /><br>
+          <input Â id="00N4p00000GM9YZ" name="00N4p00000GM9YZ" size="20" type="text" /><br>
+          <select Â id="00N4p00000GM9Yj" name="00N4p00000GM9Yj" title="Participant 5 Victim/Offender">
+            <option selected="" value="" default="" style="display:none" disabled=""></option>
+            <option value="Victim (Person Harmed)">Victim (Person Harmed)</option>
+            <option value="Offender (Person Who Harmed)">Offender (Person Who Harmed)</option>
+          </select><br>
+        </div>
+      </div>
+    `,
+  ];
+
+  const addParticipant = (e) => {
+    e.preventDefault();
+    const len = document.querySelectorAll('.participantTitle').length;
+    if (len < 5) {
+      document.querySelector('#nextParticipants').innerHTML += participants[len - 1];
+      if (len === 4) {
+        document.querySelector('.addParticipant').remove();
+      }
+    }
+  };
+
+  const removeParticipant = (e) => {
+    e.preventDefault();
+    const parts = document.querySelectorAll('.participant');
+    if (parts.length === 4) {
+      document.querySelector('#addParticipantWrapper').innerHTML += `
+        <button onclick="addParticipant(event)" class="addParticipant">add participant</button>
+      `;
+    }
+    parts[parts.length - 1].remove();
+  };
+
+</script>
+
+<style>
+  .row input[type=text], .row select, .row textarea {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid  rgba(0,0,0,1);
+    line-height: 1.5em;
+  }
+
+  .row input[type=text]:not(:first-child), .row select:not(:first-child), .row textarea:not(:first-child) {
+    border-left: none;
+  }
+
+  .row, h3 {
+    width: 60vw;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .removeParticipant, input[type=submit], .addParticipant {
+    background-color: rgba(0, 0, 0, 0.45);
+    border: none;
+    width: 10vw;
+    min-width: 140px;
+    padding: 10px;
+    color: white;
+  }
+
+  input[type=submit], #addParticipantWrapper {
+    width: 25vw;
+    padding: 20px;
+    font-size: 1.5em;
+    margin: auto;
+  }
+
+  #addParticipantWrapper {
+    text-align: center;
+  }
+
+  input[type=submit] {
+    margin: 0 20vw 20px 55vw;
+  }
+
+  input[type=submit]:hover, .addParticipant:hover, .removeParticipant:hover {
+    background-color: rgba(0, 0, 0, 1);
+  }
+  
+  input[type=text]:hover, select:hover, textarea:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  input[type=submit], .addParticipant, .removeParticipant, label, h3 {
+    font-style: italic;
+    font-family: georgia,palatino,'book antiqua','palatino linotype',serif;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 6px;
+  }
+
+  .cell {
+    /* flex-grow: 1; */
+    width: 100%;
+  }
+</style>
+
+</body>
+</html>
