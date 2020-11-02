@@ -3,16 +3,16 @@ body {
 }
   
 .cssForm::before {
-  content: "";
   background: url('https://static.wixstatic.com/media/9d1679_8b00cb2857404aea83b4be68290820de~mv2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  bottom: 0;
+  content: "";
+  left: 0;
   opacity: 0.1;
   position: absolute;
-  top: 0;
   right: 0;
-  left: 0;
-  bottom: 0;
+  top: 0;
   z-index: -1;
 }
 
@@ -21,14 +21,14 @@ body {
 }
 
 .cssForm table {
-  width: 80%;
   margin: auto;
+  width: 80%;
 }
 
 .cssForm > table > tbody > tr {
   display: inline-block;
-  width: 50%;
   margin-bottom: 20px;
+  width: 50%;
 }
 
 .cssForm > table > tbody > tr > td {
@@ -36,15 +36,15 @@ body {
 }
 
 .cssForm > table > tbody > tr:nth-last-of-type(-n+3) {
-  width: 100%;
   text-align: center;
+  width: 100%;
 }
 
 .cssLabelsColumn {
-  font-weight: bold;
-  vertical-align: center;
   display: inline-block;
+  font-weight: bold;
   margin: auto;
+  vertical-align: center;
 }
 
 .cssInputFieldsColumn {
@@ -54,10 +54,10 @@ body {
 }
 
 .cssInputFields[type=text] {
+  background: transparent;
   border: none;
   border-bottom: 1px solid black;
   width: 100%;
-  background: transparent;
 }
 
 .cssInputFields[type=text]:hover {
@@ -95,13 +95,13 @@ textarea[style] {
 input[type=button] {
   background-color: rgba(55, 59, 77, 1);
   border: solid transparent 0px;
-  cursor: pointer !important;
-  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
   border-radius: 0;
-  height: 75px;
-  width: 150px;
-  font-size: 14px;
   color: rgb(255, 255, 255);
+  cursor: pointer !important;
+  font-size: 14px;
+  height: 75px;
+  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+  width: 150px;
 }
 
 input[type=button]:hover {
