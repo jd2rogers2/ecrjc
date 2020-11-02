@@ -16,28 +16,39 @@ body {
   z-index: -1;
 }
 
+.cssForm {
+  padding: 20px;
+}
+
 .cssForm table {
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
 
-tr {
+.cssForm > table > tbody > tr {
   display: inline-block;
   width: 50%;
   margin-bottom: 20px;
+}
+
+.cssForm > table > tbody > tr > td {
+  width: 90%;
+}
+
+.cssForm > table > tbody > tr:nth-last-of-type(-n+3) {
+  width: 100%;
+  text-align: center;
 }
 
 .cssLabelsColumn {
   font-weight: bold;
   vertical-align: center;
   display: inline-block;
-  width: 50%;
   margin: auto;
 }
 
 .cssInputFieldsColumn {
   display: inline-block;
-  width: 50%;
   margin: auto;
   vertical-align: top;
 }
@@ -45,6 +56,54 @@ tr {
 .cssInputFields[type=text] {
   border: none;
   border-bottom: 1px solid black;
-  width: 80%;
+  width: 100%;
   background: transparent;
+}
+
+.cssInputFields[type=text]:hover {
+  background: white;
+}
+
+.cssForm td table {
+  width: 100%;
+}
+
+.cssForm td table tr:first-child {
+  display: none;
+}
+
+.multiSelectPicklistRow {
+  width: 100%;
+}
+
+.multiSelectPicklistRow td {
+  width: 33%;
+}
+
+.multiSelectPicklistRow td select {
+  width: 100%;
+}
+
+.multiSelectPicklistCell {
+  text-align: center;
+}
+
+textarea[style] {
+  width: 70% !important;
+}
+
+input[type=button] {
+  background-color: rgba(55, 59, 77, 1);
+  border: solid transparent 0px;
+  cursor: pointer !important;
+  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+  border-radius: 0;
+  height: 75px;
+  width: 150px;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+
+input[type=button]:hover {
+  background-color: rgba(0, 0, 0);
 }
