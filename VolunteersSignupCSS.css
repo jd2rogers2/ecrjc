@@ -4,15 +4,14 @@ body {
   
 .cssForm::before {
   background: url('https://static.wixstatic.com/media/9d1679_8b00cb2857404aea83b4be68290820de~mv2.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  bottom: 0;
+  background-repeat: round;
   content: "";
-  left: 0;
+  height: 100%;
+  left: 10%;
   opacity: 0.1;
   position: absolute;
-  right: 0;
   top: 0;
+  width: 80%;
   z-index: -1;
 }
 
@@ -29,6 +28,11 @@ body {
   display: inline-block;
   margin-bottom: 20px;
   width: 50%;
+}
+
+.cssForm > table > tbody > tr:nth-last-of-type(2n + 4) {
+  position: relative;
+  left: 4%;
 }
 
 .cssForm > table > tbody > tr > td {
