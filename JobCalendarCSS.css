@@ -1,4 +1,54 @@
+/* globals */
+
 body {
-    font-family: Arial, FreeSans, sans-serif;
-    font-size: 75%;
+    font-family: italic normal normal 14px/1.4em georgia,palatino,'book antiqua','palatino linotype',serif;
+}
+
+table {
+    padding: 10px;
+}
+
+/* header */
+
+.fc-header {
+    background-color: rgb(105, 138, 107);
+}
+
+.fc-header h2, .fc-header .fc-button {
+    margin-top: 1em;
+}
+
+.fc-header-left, .fc-header-right {
+    text-align: center;
+}
+
+.fc td.fc-header-center, .fc td.fc-header-right {
+    vertical-align: middle;
+}
+
+.fc-button-effect {
+    display: none;
+}
+
+.fc-button {
+    border: none;
+    border-radius: 5px;
+}
+
+.fc-button-inner {
+    border-width: none;
+}
+
+/* table */
+
+.fc-border-separate {
+    min-height: 1000px;
+}
+
+.fc-border-separate thead {
+    background-color: rgb(105, 138, 107, 0.5);
+}
+
+.fc-border-separate td:hover {
+    background-color:rgb(105, 138, 107, 0.2);;
 }
