@@ -33,10 +33,11 @@ table {
 .fc-button {
     border: none;
     border-radius: 5px;
+    margin: 4px;
 }
 
-.fc-button-inner {
-    border-width: none;
+.fc-state-default .fc-button-inner {
+    border-width: 0px;
 }
 
 /* table */
@@ -51,4 +52,14 @@ table {
 
 .fc-border-separate td:hover {
     background-color:rgb(105, 138, 107, 0.2);;
+}
+
+/* events */
+
+a.fc-event:hover {
+    opacity: 0.8;
+}
+
+.fc-event-time:after {
+    content: '-';
 }
