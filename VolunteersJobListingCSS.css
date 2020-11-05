@@ -89,7 +89,17 @@ a:hover {
 }
 
 /* signup modal */
+/* should the sign up buttons go to sign up page instead of this modal? */
 .ui-widget-overlay {
   background: #666;
   opacity: .5;
+}
+
+.ui-dialog-titlebar {
+  border: none;
+  background: rgb(105, 138, 107);
+  border-radius: 0px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: rgba(96, 94, 94, 1);
 }
