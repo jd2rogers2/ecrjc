@@ -19,39 +19,53 @@ body {
 
 #jobContainer {
   margin: 10px auto;
-  width: 90%;
+  width: 70%;
 }
 
 .htmlDetailElementTable {
-  background-color: rgba(105, 138, 107, 0.6);
-  border-bottom-right-radius: 30px;
-  border-top-left-radius: 30px;
   padding: 20px;
 }
 
 .cssJobName {
+  background-color: rgba(105, 138, 107, 0.6);
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  color: rgba(96, 94, 94, 1);
+  display: inline-block;
 	font-weight: bold;
   font-size: 1.5em;
-  color: rgba(96, 94, 94, 1);
+  padding: 5px 20px;
+  width: 100%;
+}
+
+.sfdc_richtext p {
+  font-size: 1.25em;
+  line-height: 1.35em;
 }
 
 /* nav links */
 
 a {
-  border-bottom: 0.1em solid #CCC;
   color: #2A6BAC;
   display: inline-block;
-  margin-right: 5%;
-  text-decoration: none;
+}
+
+div#j_id0\:j_id7[style] {
+  text-align: left !important;
 }
 
 a[name="j_id0:linkCal1"] {
+  margin-left: 15%;
   margin-top: 5%;
 }
 
+a[name="j_id0:linkCal2"] {
+  margin-right: 15%;
+}
+
 a:hover {
-  border-bottom: none;
   color: rgba(96, 94, 94, 1); 
+  text-decoration: none;
 }
 
 /* signup links */
@@ -63,6 +77,7 @@ a:hover {
 .cssJobShiftSignup a {
   background-color: rgba(96, 94, 94, 1);
   border-bottom: none;
+  border-radius: 2px;
   color: white;
   margin: auto;
   padding: 10px;

@@ -12,6 +12,7 @@ table {
 
 .fc-header {
     background-color: rgb(105, 138, 107);
+    border-radius: 2px;
 }
 
 .fc-header h2, .fc-header .fc-button {
@@ -37,6 +38,7 @@ table {
 }
 
 .fc-state-default .fc-button-inner {
+    border-radius: 2px;
     border-width: 0px;
 }
 
