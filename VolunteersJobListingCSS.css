@@ -89,9 +89,9 @@ a:hover {
 }
 
 /* signup modal */
-/* should the sign up buttons go to sign up page instead of this modal? */
 .ui-widget-overlay {
   background: #666;
+  font-family: italic normal normal 14px/1.4em georgia,palatino,'book antiqua','palatino linotype',serif;
   opacity: .5;
 }
 
@@ -102,4 +102,38 @@ a:hover {
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   color: rgba(96, 94, 94, 1);
+}
+
+.ui-dialog-titlebar button.ui-dialog-titlebar-close {
+  margin-right: 10px;
+}
+
+.ui-dialog-titlebar button .ui-button-icon {
+  background-image: none;
+}
+
+.ui-dialog-titlebar-close:hover, .ui-dialog-titlebar-close:active, .ui-button:hover .ui-icon, .ui-button:active .ui-icon {
+  border: none;
+  background: black;
+  background-image: none;
+}
+
+/* signup submit buttons */
+
+input[type="submit"][value="Sign Up"], input[type="submit"][value="Cancel"] {
+  background-color: rgba(96, 94, 94, 1);
+  border: none;
+  border-radius: 2px;
+  color: white;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+#j_id0\:frmSignUp\:panelSignUp {
+  display: inline-block;
+  text-align: center;
+}
+
+#j_id0\:frmSignUp\:panelSignUp table {
+  text-align: left;
 }
