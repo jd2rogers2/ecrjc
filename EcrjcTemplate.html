@@ -2,31 +2,181 @@
   <apex:stylesheet value="{!URLFOR($Resource.SiteSamples, 'SiteStyles.css')}" />
 
   <div id="header">
-    <img src="https://static.wixstatic.com/media/9d1679_b2895d94dc6f4b9b833b9b99309b2088~mv2.png" />
-    <a href="https://prodcopy1-ecrjc.cs16.force.com/volunteers/GW_Volunteers__VolunteersSignup">
-      Home/Signup
-    </a>
-    <a href="https://prodcopy1-ecrjc.cs16.force.com/volunteers/GW_Volunteers__PersonalSiteJobListing">
-      Opportunities
-    </a>
-    <a href="https://prodcopy1-ecrjc.cs16.force.com/volunteers/GW_Volunteers__JobCalendar">
-      Calendar
-    </a>
-    <a href="https://prodcopy1-ecrjc.cs16.force.com/volunteers/GW_Volunteers__PersonalSiteReportHours">
-      Report Hours
-    </a>
-    <a href="https://prodcopy1-ecrjc.cs16.force.com/volunteers/GW_Volunteers__PersonalSiteContactLookup">
-      Lookup Your Volunteer Contact Info
-    </a>
-    <a href="https://www.ecrjc.org">
-      Exit Volunteer App
-    </a>
+    <div id="navWrapper">
+      <a
+        id="logoLink"
+        href="https://www.ecrjc.org"
+      >
+        <img
+          id="ecrjcLogo"
+          src="https://static.wixstatic.com/media/9d1679_fedda26e17c44560b691b29b6f122ab8~mv2.png"
+          alt="ECRJC logo"
+        />
+      </a>
+      <a
+        class="navItem"
+        href="https://prodcopy1-ecrjc.cs16.force.com/volunteers/GW_Volunteers__VolunteersSignup"
+      >
+        HOME/SIGNUP
+      </a>
+      <a
+        class="navItem"
+        href="https://prodcopy1-ecrjc.cs16.force.com/volunteers/GW_Volunteers__PersonalSiteJobListing"
+      >
+        OPPORTUNITIES
+      </a>
+      <a
+        class="navItem"
+        href="https://prodcopy1-ecrjc.cs16.force.com/volunteers/GW_Volunteers__JobCalendar"
+      >
+        CALENDAR
+      </a>
+      <a
+        class="navItem"
+        href="https://prodcopy1-ecrjc.cs16.force.com/volunteers/GW_Volunteers__PersonalSiteReportHours"
+      >
+        REPORT HOURS
+      </a>
+      <a
+        class="navItem"
+        href="https://prodcopy1-ecrjc.cs16.force.com/volunteers/GW_Volunteers__PersonalSiteContactLookup"
+      >
+        GET YOUR VOLUNTEER INFO
+      </a>
+    </div>
+
+    <div id="socials">
+      <a
+        href="https://www.facebook.com/ErieCountyRestorativeJusticeCoalition/"
+        class="socialIcon"
+        target="_blank"
+        >
+        <img src="https://static.wixstatic.com/media/d3470ec8ca26475da4b228f0199b5d3d.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01/d3470ec8ca26475da4b228f0199b5d3d.webp" />
+      </a>
+      <a
+        href="https://twitter.com/ECRJC"
+        class="socialIcon"
+        target="_blank"
+        >
+        <img src="https://static.wixstatic.com/media/7177d158c36d432b93f51e54f80e2f3c.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01/7177d158c36d432b93f51e54f80e2f3c.webp" />
+      </a>
+      <a
+        href="https://www.instagram.com/ecrjc567/?hl=en"
+        class="socialIcon"
+        target="_blank"
+        >
+        <img src="https://static.wixstatic.com/media/d7ffe259c9e54f59837481b3dd0130eb.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01/d7ffe259c9e54f59837481b3dd0130eb.webp" />
+      </a>
+      <a
+        href="https://www.youtube.com/channel/UCU4yCROJtCImErRkWSIxbtg"
+        class="socialIcon"
+        target="_blank"
+        >
+        <img src="https://static.wixstatic.com/media/af037f3cc11741d1ada5c7f70d1074bf.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01/af037f3cc11741d1ada5c7f70d1074bf.webp" />
+      </a>
+      <a
+        href="https://plus.google.com/u/2/108546251845408606651"
+        class="socialIcon"
+        target="_blank"
+        >
+        <img src="https://static.wixstatic.com/media/972628489fd343de9a0961f0a1a67cfa.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01/972628489fd343de9a0961f0a1a67cfa.webp" />
+      </a>
+    </div>
   </div>
-
+  <div id="barThing"></div>
+  
   <apex:insert name="body"/>
-
+  
+  <div id="barThing2"></div>
   <div id="footer">
     <site:googleAnalyticsTracking />
   </div>
+
+  <style>
+    #header {
+      background-color: #618c68;
+      font-family: Arial,Helvetica,sans-serif;
+      font-size: 12px;
+      height: 144px;
+      width: 100vw;
+    }
+    
+    #navWrapper {
+      margin-left: calc((100% - 980px) * 0.5);
+      height: 144px;
+      padding-top: 28px;
+      vertical-align: middle;
+    }
+
+    #ecrjcLogo {
+      height: 98px;
+      width: 98px;
+    }
+
+    #logoLink {
+      text-decoration: none;
+    }
+
+    a.navItem {
+      color: white;
+      display: inline-block;
+      height: 98px;
+      padding: 22px 13px;
+      text-decoration: none;
+      vertical-align: middle;
+    }
+
+    a.navItem:hover {
+      color: black;
+      border-top: 4px solid black;
+    }
+
+    #socials {
+      left: 824px;
+      margin-left: calc((100% - 980px) * 0.5);
+      position: absolute;
+      top: 106px;
+    }
+    
+    .socialIcon {
+      margin-right: 3px;
+      text-decoration: none;
+    }
+
+    .socialIcon img {
+      height: 25px;
+      width: 25px;
+    }
+
+    #barThing {
+      background-color: #424242;
+      height: 9px;
+      margin: auto;
+      max-width: 1558px;
+      width: 100%;
+    }
+    
+    #barThing2 {
+      background-color: #A0A09F;
+      height: 6px;
+      width: 100%;
+    }
+
+    #footer {
+      background-color: #618c68;
+      height: 500px;
+      width: 100%;
+    }
+
+    /* temp stuff */
+    body {
+      margin: 0;
+    }
+
+    #barThing {
+      margin-bottom: 500px;
+    }
+
+  </style>
 
 </apex:page>
