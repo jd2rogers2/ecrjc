@@ -1,13 +1,32 @@
 <apex:page showHeader="false" id="SiteTemplate">
-  <apex:stylesheet value="{!URLFOR($Resource.SiteSamples, 'SiteStyles.css')}"/>
-  <apex:insert name="header">
-    <c:SiteHeader />
-    <hr/>
-  </apex:insert>
+  <apex:stylesheet value="{!URLFOR($Resource.SiteSamples, 'SiteStyles.css')}" />
+
+  <div id="header">
+    <img src="https://static.wixstatic.com/media/9d1679_b2895d94dc6f4b9b833b9b99309b2088~mv2.png" />
+    <a href="https://prodcopy1-ecrjc.cs16.force.com/volunteers/GW_Volunteers__VolunteersSignup">
+      Home/Signup
+    </a>
+    <a href="https://prodcopy1-ecrjc.cs16.force.com/volunteers/GW_Volunteers__PersonalSiteJobListing">
+      Opportunities
+    </a>
+    <a href="https://prodcopy1-ecrjc.cs16.force.com/volunteers/GW_Volunteers__JobCalendar">
+      Calendar
+    </a>
+    <a href="https://prodcopy1-ecrjc.cs16.force.com/volunteers/GW_Volunteers__PersonalSiteReportHours">
+      Report Hours
+    </a>
+    <a href="https://prodcopy1-ecrjc.cs16.force.com/volunteers/GW_Volunteers__PersonalSiteContactLookup">
+      Lookup Your Volunteer Contact Info
+    </a>
+    <a href="https://www.ecrjc.org">
+      Exit Volunteer App
+    </a>
+  </div>
+
   <apex:insert name="body"/>
-  <apex:insert name="footer">
-    <hr/>
-    <c:SiteFooter />
+
+  <div id="footer">
     <site:googleAnalyticsTracking />
-  </apex:insert>
+  </div>
+
 </apex:page>
