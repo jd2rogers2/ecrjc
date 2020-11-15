@@ -1,0 +1,139 @@
+body {
+  font-family: italic normal normal 14px/1.4em georgia,palatino,'book antiqua','palatino linotype',serif;
+}
+
+/* job description */
+
+/* #jobContainer:before {
+  background: url('https://static.wixstatic.com/media/9d1679_a44f093570c542fdaf6a7e35737c6c3e~mv2.jpg');
+  background-repeat: round;
+  content: "";
+  height: 100%;
+  left: 10%;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  width: 80%;
+  z-index: -1;
+} */
+
+#jobContainer {
+  margin: 10px auto;
+  width: 70%;
+}
+
+.htmlDetailElementTable {
+  padding: 20px;
+}
+
+.cssJobName {
+  background-color: rgba(105, 138, 107, 0.6);
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  color: rgba(96, 94, 94, 1);
+  display: inline-block;
+	font-weight: bold;
+  font-size: 1.5em;
+  padding: 5px 20px;
+  width: 100%;
+}
+
+.sfdc_richtext p {
+  font-size: 1.25em;
+  line-height: 1.35em;
+}
+
+/* nav links */
+
+a {
+  color: #2A6BAC;
+  display: inline-block;
+}
+
+div#j_id0\:j_id7[style] {
+  text-align: left !important;
+}
+
+a[name="j_id0:linkCal1"] {
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
+a[name="j_id0:linkCal2"] {
+  margin-right: 15%;
+}
+
+a:hover {
+  color: rgba(96, 94, 94, 1); 
+  text-decoration: none;
+}
+
+/* signup links */
+.cssJobShiftSignup {
+  display: inline-block;
+  margin: 5px;
+}
+
+.cssJobShiftSignup a {
+  background-color: rgba(96, 94, 94, 1);
+  border-bottom: none;
+  border-radius: 2px;
+  color: white;
+  margin: auto;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.cssJobShiftSignup a:after {
+  content: "!";
+}
+
+/* signup modal */
+.ui-widget-overlay {
+  background: #666;
+  font-family: italic normal normal 14px/1.4em georgia,palatino,'book antiqua','palatino linotype',serif;
+  opacity: .5;
+}
+
+.ui-dialog-titlebar {
+  border: none;
+  background: #618c68;
+  border-radius: 0px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: rgba(96, 94, 94, 1);
+}
+
+.ui-dialog-titlebar button.ui-dialog-titlebar-close {
+  margin-right: 10px;
+}
+
+.ui-dialog-titlebar button .ui-button-icon {
+  background-image: none;
+}
+
+.ui-dialog-titlebar-close:hover, .ui-dialog-titlebar-close:active, .ui-button:hover .ui-icon, .ui-button:active .ui-icon {
+  border: none;
+  background: black;
+  background-image: none;
+}
+
+/* signup submit buttons */
+
+input[type="submit"][value="Sign Up"], input[type="submit"][value="Cancel"] {
+  background-color: rgba(96, 94, 94, 1);
+  border: none;
+  border-radius: 2px;
+  color: white;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+#j_id0\:frmSignUp\:panelSignUp {
+  display: inline-block;
+  text-align: center;
+}
+
+#j_id0\:frmSignUp\:panelSignUp table {
+  text-align: left;
+}
