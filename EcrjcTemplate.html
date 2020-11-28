@@ -2,6 +2,10 @@
   <apex:stylesheet value="{!URLFOR($Resource.SiteSamples, 'SiteStyles.css')}" />
 
   <div id="header">
+    <div id="appLabel">
+      <span id="appLabelText1">Volunteer</span>
+      <span id="appLabelText2">App</span>
+    </div>
     <div id="navWrapper">
       <a
         id="logoLink"
@@ -93,6 +97,10 @@
   </div>
 
   <style>
+    body {
+      font-family: italic normal normal 14px/1.4em georgia,palatino,'book antiqua','palatino linotype',serif;
+    }
+
     #header {
       background-color: #618c68;
       font-family: Arial,Helvetica,sans-serif;
@@ -101,13 +109,38 @@
       width: 100vw;
     }
     
+    #appLabel {
+      display: inline-block;
+      width: 10%;
+    }
+    
+    #appLabelText1 {
+      color: white;
+      font-size: 3em;
+      left: 5%;
+      position: absolute;
+      top: 40px;
+      transform: skewY(-20deg);
+    }
+    
+    #appLabelText2 {
+      color: white;
+      font-size: 3em;
+      left: calc(5% + 70px);
+      position: absolute;
+      top: 60px;
+      transform: skewY(-20deg);
+    }
+    
     #navWrapper {
-      margin-left: calc((100% - 980px) * 0.5);
+      display: inline-block;
       height: 144px;
       padding-top: 28px;
+      text-align: center;
+      width: 80%;
       vertical-align: middle;
     }
-
+    
     #ecrjcLogo {
       height: 98px;
       width: 98px;
@@ -168,15 +201,5 @@
       width: 100%;
     }
 
-    /* temp stuff */
-    body {
-      margin: 0;
-    }
-
-    #barThing {
-      margin-bottom: 500px;
-    }
-
   </style>
-
 </apex:page>
