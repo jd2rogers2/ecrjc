@@ -104,52 +104,54 @@
         }
     </script>
 
-    <apex:form id="form1" styleclass="form1">
+  <apex:composition template="{!$Site.Template}">
+      <apex:form id="form1" styleclass="form1">
 
-        <apex:outputPanel id="panelVolunteerLookup" styleClass="thumbnail center well well-small text-center cssContactLookupPanel">
+          <apex:outputPanel id="panelVolunteerLookup" styleClass="thumbnail center well well-small text-center cssContactLookupPanel">
 
-            <h3>{!$Label.gw_volunteers__labelcontactinfolookuptitle}</h3>
+              <h3>{!$Label.gw_volunteers__labelcontactinfolookuptitle}</h3>
 
-            <p>
-                <apex:outputText value="{!$Label.gw_volunteers__labelcontactlookupinstructions}" />
-            </p>
+              <p>
+                  <apex:outputText value="{!$Label.gw_volunteers__labelcontactlookupinstructions}" />
+              </p>
 
-            <div class="input-prepend">
-                <span class="add-on">
-                    <i class="icon-user"></i>
-                </span>
-                <apex:inputText value="{!contact.FirstName}" id="FirstName" required="true" styleClass="FirstName" onfocus="updateHelpText('FirstName','');"
-                />
-            </div>
-            <br/>
+              <div class="input-prepend">
+                  <span class="add-on">
+                      <i class="icon-user"></i>
+                  </span>
+                  <apex:inputText value="{!contact.FirstName}" id="FirstName" required="true" styleClass="FirstName" onfocus="updateHelpText('FirstName','');"
+                  />
+              </div>
+              <br/>
 
-            <div class="input-prepend">
-                <span class="add-on">
-                    <i class="icon-user"></i>
-                </span>
-                <apex:inputText value="{!contact.LastName}" id="LastName" styleClass="LastName" onfocus="updateHelpText('LastName','');"
-                />
-            </div>
-            <br/>
+              <div class="input-prepend">
+                  <span class="add-on">
+                      <i class="icon-user"></i>
+                  </span>
+                  <apex:inputText value="{!contact.LastName}" id="LastName" styleClass="LastName" onfocus="updateHelpText('LastName','');"
+                  />
+              </div>
+              <br/>
 
-            <div class="input-prepend">
-                <span class="add-on">
-                    <i class="icon-envelope"></i>
-                </span>
-                <apex:inputText value="{!contact.Email}" id="Email" styleClass="Email" onfocus="updateHelpText('Email','');" />
-            </div>
-            <br/>
+              <div class="input-prepend">
+                  <span class="add-on">
+                      <i class="icon-envelope"></i>
+                  </span>
+                  <apex:inputText value="{!contact.Email}" id="Email" styleClass="Email" onfocus="updateHelpText('Email','');" />
+              </div>
+              <br/>
 
-            <apex:commandButton value="{!$Label.gw_volunteers__labelbuttonsend}" immediate="false" action="{!LookupContact}" styleclass="btn btn-large"
-            />
-            <br/>
-            <br/>
-            <p>
-                <apex:outputText value="{!strResult}" />
-            </p>
+              <apex:commandButton value="{!$Label.gw_volunteers__labelbuttonsend}" immediate="false" action="{!LookupContact}" styleclass="btn btn-large"
+              />
+              <br/>
+              <br/>
+              <p>
+                  <apex:outputText value="{!strResult}" />
+              </p>
 
-        </apex:outputPanel>
+          </apex:outputPanel>
 
-    </apex:form>
+      </apex:form>
+    </apex:composition>
 
 </apex:page>

@@ -32,6 +32,7 @@
 
     <apex:stylesheet value="{!strURLtoCSSFile}" />
 
+  <apex:composition template="{!$Site.Template}">
     <apex:form id="frm" styleClass="cssForm" > 
         <apex:panelGrid columns="2" columnClasses="cssLabelsColumn, cssInputFieldsColumn" >
             <apex:outputLabel value="First Name *" for="txtFirstName" ></apex:outputLabel>
@@ -70,4 +71,5 @@
         </apex:panelGrid>
         <apex:messages style="color:red;" />
     </apex:form>
+  </apex:composition>
 </apex:page>

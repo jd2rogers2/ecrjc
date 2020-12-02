@@ -291,6 +291,7 @@
     }
 </style>
 
+  <apex:composition template="{!$Site.Template}">
     <apex:outputPanel id="panelPrint" layout="block" style="float:right;margin-right:10px;margin-top:10px;" rendered="{!AND(NOT(fPrint),NOT(fWeb))}">
         <a href="javascript:printWin('/apex/{!ns}JobCalendar?Print=1' +
             '&campaignId={!campaignId}' +
@@ -370,4 +371,5 @@
             <div id='calendar' style="{!IF(AND(NOT(fPrint),NOT(fWeb)), 'padding:10px;', null)}}"></div>
         </td></tr>
     </table>
+  </apex:composition>
 </apex:page>
